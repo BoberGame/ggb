@@ -1,0 +1,13 @@
+@import "vendor/reset";
+@import "fonts";
+@import "variables";
+@import "global";
+
+/* Swiper */
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/intro";

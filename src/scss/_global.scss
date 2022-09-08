@@ -1,0 +1,19 @@
+body {
+    background-color: var(--background);
+    color: var(--black);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--regular-size);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
