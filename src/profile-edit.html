@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('partials/head.html', {
+"title":"My account"
+})
+
+<body>
+    @@include('partials/header.html', {})
+    <main class="page">
+        <section class="profile">
+            <div class="profile__container">
+                <div class="page__header">
+                    <h2 class="page__title">My account</h2>
+                </div>
+                <div class="profile__wrapper profile__wrapper_edit">
+                    <div class="profile__header">
+                        <button class="profile__return btn btn_icon">
+                            <svg>
+                                <use href="@img/icons/icons.svg#arrow-l"></use>
+                            </svg>
+                            <span>Return to Account Details</span>
+                        </button>
+                        <button class="btn btn_dark btn_outline">add a new address</button>
+                    </div>
+                    <div class="profile-address address">
+                        <h4 class="address__title">Your addresses</h4>
+                        <div class="profile__category">User Name <i>(Default)</i></div>
+                        <div class="address__current">United states</div>
+                        <div class="address__actions">
+                            <button class="btn btn_dark btn_outline">Edit</button>
+                            <button class="btn_icon btn btn_underline">Delete</button>
+                        </div>
+
+                        <form class="address__form" action="/">
+                            <div class="form__header">
+                                <h4 class="form__label">Edit address</h4>
+                            </div>
+                            <div class="form__several">
+                                <div class="form__input__wrapper ">
+                                    <input
+                                        class="form__input form__input_small"
+                                        type="text"
+                                        placeholder="First name"
+                                        required>
+                                    <span>
+                                        <svg>
+                                            <use href="@img/icons/icons.svg#exclamation"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="form__input__wrapper ">
+                                    <input
+                                        class="form__input form__input_small"
+                                        type="text"
+                                        placeholder="Last name"
+                                        required>
+                                    <span>
+                                        <svg>
+                                            <use href="@img/icons/icons.svg#exclamation"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form__input__wrapper ">
+                                <input
+                                    class="form__input form__input_small"
+                                    type="text"
+                                    placeholder="Company"
+                                    required>
+                                <span>
+                                    <svg>
+                                        <use href="@img/icons/icons.svg#exclamation"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="form__input__wrapper ">
+                                <input
+                                    class="form__input form__input_small"
+                                    type="text"
+                                    placeholder="Address"
+                                    required>
+                                <span>
+                                    <svg>
+                                        <use href="@img/icons/icons.svg#exclamation"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="form__input__wrapper ">
+                                <input
+                                    class="form__input form__input_small"
+                                    type="text"
+                                    placeholder="City"
+                                    required>
+                                <span>
+                                    <svg>
+                                        <use href="@img/icons/icons.svg#exclamation"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="form__input__wrapper ">
+                                <input
+                                    class="form__input form__input_small"
+                                    type="text"
+                                    placeholder="Country"
+                                    required>
+                                <span>
+                                    <svg>
+                                        <use href="@img/icons/icons.svg#exclamation"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="form__input__wrapper ">
+                                <input
+                                    class="form__input form__input_small"
+                                    type="text"
+                                    placeholder="Province"
+                                    required>
+                                <span>
+                                    <svg>
+                                        <use href="@img/icons/icons.svg#exclamation"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="form__several">
+                                <div class="form__input__wrapper ">
+                                    <input
+                                        class="form__input form__input_small"
+                                        type="text"
+                                        placeholder="Postal/Zip Code"
+                                        required>
+                                    <span>
+                                        <svg>
+                                            <use href="@img/icons/icons.svg#exclamation"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="form__input__wrapper ">
+                                    <input
+                                        class="form__input form__input_small"
+                                        type="phone"
+                                        placeholder="Phone"
+                                        required>
+                                    <span>
+                                        <svg>
+                                            <use href="@img/icons/icons.svg#exclamation"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <label class="form__label form__label_checkbox" for="setDefaultAddress">
+                                <input
+                                    class="form__checkbox" 
+                                    type="checkbox" 
+                                    name="setDefaultAddressBox" 
+                                    id="setDefaultAddress"
+                                    checked>
+                                <span class="form__box"></span>
+                                Set as default address
+                            </label>
+                            <div class="address__actions address__actions_form">
+                                <button class="btn btn_dark btn_outline" type="submit">Upgrade address</button>
+                                <button class="btn btn_icon btn_underline" type="button">Cancel</button>
+                            </div>
+                        </form>
+                    </div><!-- /.profile-address -->
+                </div><!-- /.profile__wrapper -->
+            </div><!-- /.profile__container -->
+        </section><!-- /.profile -->
+    </main>
+    @@include('partials/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

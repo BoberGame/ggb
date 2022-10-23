@@ -1,0 +1,38 @@
+.entered-info {
+  display: none;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: rem(15);
+    padding: rem(15) rem(14);
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #BDBDBD;
+    border-radius: rem(5);
+
+    &:not(:last-child) {
+      margin-bottom: rem(15);
+    }
+  }
+
+  &__left {
+    display: flex;
+    column-gap: rem(50);
+  }
+  &__title {
+    min-width: rem(60);
+  }
+
+  &__title,
+  &__data {
+    font-size: rem(16);
+    line-height: 1.65;
+    color: rgba(25, 25, 25, 0.6);
+  }
+
+  &__data {
+    color: var(--black);
+  }
+}
+

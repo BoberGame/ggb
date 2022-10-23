@@ -1,13 +1,48 @@
 @import "vendor/reset";
 @import "fonts";
 @import "variables";
+@import "mixins";
 @import "global";
+@import "helpers";
 
 /* Swiper */
 @import '../../node_modules/swiper/swiper.scss';
 @import '../../node_modules/swiper/modules/navigation/navigation.scss';
 @import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 
 /* Blocks */
+// @import "blocks/container";
+@import "blocks/page";
+@import "blocks/buttons";
+@import "blocks/select";
 @import "blocks/header";
+@import "blocks/search";
+@import "blocks/menu-burger";
+@import "blocks/select";
+@import "blocks/nav";
+@import "blocks/tabs";
+@import "blocks/play";
+@import "blocks/card";
+@import "blocks/card-page";
+@import "blocks/caption";
 @import "blocks/intro";
+@import "blocks/slider";
+@import "blocks/section";
+@import "blocks/products";
+@import "blocks/sellers";
+@import "blocks/features";
+@import "blocks/hero-block";
+@import "blocks/reviews";
+@import "blocks/socials";
+@import "blocks/form";
+@import "blocks/blog";
+@import "blocks/tabs-page";
+@import "blocks/academy";
+@import "blocks/breadcrumbs";
+@import "blocks/cart";
+@import "blocks/checkout";
+@import "blocks/entered-info";
+@import "blocks/profile";
+@import "blocks/footer";
+@import "blocks/modal";

@@ -1,0 +1,28 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: rem(30);
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--black);
+    text-transform: uppercase;
+
+    @media (max-width: $mobile) {
+      font-size: rem(28);
+    }
+  }
+
+
+}
+
+.page-form {
+  @include adaptiv-value(padding-top, 200, 110, 1);
+  margin-bottom: rem(120);
+}

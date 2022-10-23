@@ -1,0 +1,51 @@
+.breadcrumbs {
+  margin-top: rem(40);
+  
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    position: relative;
+    margin: 0 rem(12);
+
+    font-size: rem(14);
+    line-height: 1.65;
+
+    &.active {
+      color: var(--black);
+      text-decoration: underline;
+
+      a {
+        color: var(--black);
+      }
+    }
+
+    &:not(:last-child) {
+      &:after {
+        content: '>';
+        position: absolute;
+        top: 50%;
+        right: rem(-15);
+        transform: translateY(-50%);
+
+        color: var(--grey);
+      }
+    }
+
+
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--grey);
+
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

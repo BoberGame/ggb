@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('partials/head.html', {
+"title":"My account"
+})
+
+<body>
+    @@include('partials/header.html', {})
+    <main class="page">
+        <section class="profile">
+            <div class="profile__container">
+                <div class="page__header">
+                    <h2 class="page__title">My account</h2>
+                </div>
+                <div class="profile__wrapper profile__wrapper_main">
+                    <aside class="profile__sidebar">
+                        <h4 class="profile__link profile__link_active">
+                            <a href="profile.html">Account details</a>
+                        </h4>
+                        <div class="profile__category">
+                            <div class="profile__category__link">User Name</div>
+                            <div class="profile__category__link">username@gmail.com</div>
+                        </div>
+                        <div class="profile__category">
+                            <div class="profile__category__linn">United states</div>
+                        </div>
+                        <a class="profile__link" href="profile-edit.html">View Adresses (1)</a>
+                        <a class="profile__link profile__link_logout" href="log-in.html">Log out</a>
+                    </aside>
+                    <div class="profile__content profile__content_main">
+                        <div class="profile-orders orders">
+                            <div class="orders__item">
+                                <div class="orders__data">
+                                    <div class="orders__header">
+                                        <div class="orders__link">
+                                            <span class="orders__category">Order number:</span>
+                                            <span class="orders__info">123456789</span>
+                                        </div>
+                                        <div class="orders__link">
+                                            <span class="orders__category">Order status:</span>
+                                            <span class="orders__info">Сompleted</span>
+                                        </div>
+                                    </div>
+                                    <div class="orders__link">
+                                        <span class="orders__category">Quantity:</span>
+                                        <span class="orders__info">21</span>
+                                    </div>
+                                    <div class="orders__link">
+                                        <span class="orders__category">Date:</span>
+                                        <span class="orders__info">05/12/21</span>
+                                    </div>
+                                    <div class="orders__link">
+                                        <span class="orders__info orders__info_price">$375.00</span>
+                                    </div>
+                                </div>
+                                <div class="orders__actions">
+                                    <a class="orders__btn btn btn_ouline btn_light" href="profile-order.html">View details</a>
+                                    <button class="orders__btn btn btn_dark">Repeat order</button>
+                                </div>
+                            </div>
+                            <div class="orders__item">
+                                <div class="orders__data">
+                                    <div class="orders__header">
+                                        <div class="orders__link">
+                                            <span class="orders__category">Order number:</span>
+                                            <span class="orders__info">123456789</span>
+                                        </div>
+                                        <div class="orders__link">
+                                            <span class="orders__category">Order status:</span>
+                                            <span class="orders__info">Сompleted</span>
+                                        </div>
+                                    </div>
+                                    <div class="orders__link">
+                                        <span class="orders__category">Quantity:</span>
+                                        <span class="orders__info">21</span>
+                                    </div>
+                                    <div class="orders__link">
+                                        <span class="orders__category">Date:</span>
+                                        <span class="orders__info">05/12/21</span>
+                                    </div>
+                                    <div class="orders__link">
+                                        <span class="orders__info orders__info_price">$375.00</span>
+                                    </div>
+                                </div>
+                                <div class="orders__actions">
+                                    <a class="orders__btn btn btn_ouline btn_light" href="profile-order.html">View details</a>
+                                    <button class="orders__btn btn btn_dark">Repeat order</button>
+                                </div>
+                            </div>
+                            <div class="orders__item">
+                                <div class="orders__data">
+                                    <div class="orders__header">
+                                        <div class="orders__link">
+                                            <span class="orders__category">Order number:</span>
+                                            <span class="orders__info">123456789</span>
+                                        </div>
+                                        <div class="orders__link">
+                                            <span class="orders__category">Order status:</span>
+                                            <span class="orders__info">Сompleted</span>
+                                        </div>
+                                    </div>
+                                    <div class="orders__link">
+                                        <span class="orders__category">Quantity:</span>
+                                        <span class="orders__info">21</span>
+                                    </div>
+                                    <div class="orders__link">
+                                        <span class="orders__category">Date:</span>
+                                        <span class="orders__info">05/12/21</span>
+                                    </div>
+                                    <div class="orders__link">
+                                        <span class="orders__info orders__info_price">$375.00</span>
+                                    </div>
+                                </div>
+                                <div class="orders__actions">
+                                    <a class="orders__btn btn btn_ouline btn_light" href="profile-order.html">View details</a>
+                                    <button class="orders__btn btn btn_dark">Repeat order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.profile__container -->
+        </section><!-- /.profile -->
+    </main>
+    @@include('partials/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

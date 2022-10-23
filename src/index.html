@@ -1,22 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('partials/head.html', {
-"title":"Главная"
+"title":"Home"
 })
 
 <body>
     @@include('partials/header.html', {})
-    <main>
+    <main class="page">
+        <!-- Intro -->
+        <section class="intro">
+            <div class="intro__container">
+                <div class="intro__inner">
+                    <div class="intro__left">
+                        <h1 class="intro__title"><strong>Change your life.</strong> Become our top artist.</h1>
+                        <h2 class="intro__subtitle">We help our students start their own successful businesses</h2>
+                        <div class="intro__actions">
+                            <a class="intro__btn btn btn_dark" href="products.html">our Products
+                                <svg>
+                                    <use href="@img/icons/icons.svg#arrow-right">
+                                </svg>
+                            </a>
+                            <a class="intro__btn btn btn_dark btn_outline" href="#">our courses
+                                <svg>
+                                    <use href="@img/icons/icons.svg#arrow-right">
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="intro__wrapper">
+                        <img class="intro__img img" src="@img/people/1.png" alt="Women">
+                        <div class="intro__caption caption">We Create <span>Beautiful</span></div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.intro -->
 
 
-        <div class="intro">
-            intro
+
+        <!-- Products -->
+        <div class="products">
+            <div class="products__container">
+                <div class="products__wrapper">
+                    <div class="swiper-products swiper">
+                        <div class="swiper-wrapper">
+                            <div class="products__item swiper-slide">
+                                <div class="products__preview">
+                                    <img class="img" src="@img/products/1.png" alt="PMU Machine">
+                                </div>
+                                <div class="products__info">
+                                    <h3 class="products__name">PMU Machine</h3>
+                                    <ul class="products__desc">
+                                        <li class="products__desc__item"><strong>Low</strong>Vibration</li>
+                                        <li class="products__desc__item"><strong>3.5mm</strong>Long Stroke</li>
+                                        <li class="products__desc__item"><strong>Powerful</strong>12V Coreless Motor</li>
+                                        <li class="products__desc__item"><strong>Low</strong>Noise</li>
+                                        <li class="products__desc__item"><strong>Light</strong>Ergonomic Design</li>
+                                        <li class="products__desc__item"><strong>Universal</strong>Modular Needle System</li>
+                                    </ul>
+                                    <div class="products__actions">
+                                        <button class="products__btn btn btn_light btn_outline" type="button">watch video</button>
+                                        <a class="products__btn btn btn_light btn_outline" href="#">
+                                            shop now
+                                            <svg>
+                                                <use href="@img/icons/icons.svg#arrow-right">
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item swiper-slide">
+                                <div class="products__preview">
+                                    <img class="img" src="@img/products/2.png" alt="PMU Machine">
+                                </div>
+                                <div class="products__info">
+                                    <h3 class="products__name">PMU Machine</h3>
+                                    <ul class="products__desc">
+                                        <li class="products__desc__item"><strong>Low</strong>Vibration</li>
+                                        <li class="products__desc__item"><strong>3.5mm</strong>Long Stroke</li>
+                                        <li class="products__desc__item"><strong>Powerful</strong>12V Coreless Motor</li>
+                                        <li class="products__desc__item"><strong>Low</strong>Noise</li>
+                                        <li class="products__desc__item"><strong>Light</strong>Ergonomic Design</li>
+                                        <li class="products__desc__item"><strong>Universal</strong>Modular Needle System</li>
+                                    </ul>
+                                    <div class="products__actions">
+                                        <button class="products__btn btn btn_light btn_outline" type="button">watch video</button>
+                                        <a class="products__btn btn btn_light btn_outline" href="#">
+                                            shop now
+                                            <svg>
+                                                <use href="@img/icons/icons.svg#arrow-right">
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item swiper-slide">
+                                <div class="products__preview">
+                                    <img class="img" src="@img/products/3.png" alt="PMU Machine">
+                                </div>
+                                <div class="products__info">
+                                    <h3 class="products__name">PMU Machine</h3>
+                                    <ul class="products__desc">
+                                        <li class="products__desc__item"><strong>Low</strong>Vibration</li>
+                                        <li class="products__desc__item"><strong>3.5mm</strong>Long Stroke</li>
+                                        <li class="products__desc__item"><strong>Powerful</strong>12V Coreless Motor</li>
+                                        <li class="products__desc__item"><strong>Low</strong>Noise</li>
+                                        <li class="products__desc__item"><strong>Light</strong>Ergonomic Design</li>
+                                        <li class="products__desc__item"><strong>Universal</strong>Modular Needle System</li>
+                                    </ul>
+                                    <div class="products__actions">
+                                        <button class="products__btn btn btn_light btn_outline" type="button">watch video</button>
+                                        <a class="products__btn btn btn_light btn_outline" href="#">
+                                            shop now
+                                            <svg>
+                                                <use href="@img/icons/icons.svg#arrow-right">
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item swiper-slide">
+                                <div class="products__preview">
+                                    <img class="img" src="@img/products/4.png" alt="PMU Machine">
+                                </div>
+                                <div class="products__info">
+                                    <h3 class="products__name">PMU Machine</h3>
+                                    <ul class="products__desc">
+                                        <li class="products__desc__item"><strong>Low</strong>Vibration</li>
+                                        <li class="products__desc__item"><strong>3.5mm</strong>Long Stroke</li>
+                                        <li class="products__desc__item"><strong>Powerful</strong>12V Coreless Motor</li>
+                                        <li class="products__desc__item"><strong>Low</strong>Noise</li>
+                                        <li class="products__desc__item"><strong>Light</strong>Ergonomic Design</li>
+                                        <li class="products__desc__item"><strong>Universal</strong>Modular Needle System</li>
+                                    </ul>
+                                    <div class="products__actions">
+                                        <button class="products__btn btn btn_light btn_outline" type="button">watch video</button>
+                                        <a class="products__btn btn btn_light btn_outline" href="#">
+                                            shop now
+                                            <svg>
+                                                <use href="@img/icons/icons.svg#arrow-right">
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev dark"></div>
+                        <div class="swiper-button-next dark"></div>
+                    </div><!-- /.swiper-products -->
+                </div><!-- /.products__wrapper -->
+            </div><!-- /.container -->
+        </div><!-- /.products -->
+
+
+
+        <!-- Sellers -->
+        <section class="sellers section">
+            <div class="sellers__container">
+                <div class="section__header">
+                    <h2 class="section__title">Top sellers</h2>
+                    <div class="section__text">Every product we have created is a solution, or a new approach to a common problem in the PMU industry. Every tool is designed to make your work easy and enjoyable.Our company aims to offer artists high-quality, innovative products at modest prices.</div>
+                </div>
+                <div class="sellers__wrapper">
+                    <div class="swiper-sellers swiper">
+                        <div class="swiper-wrapper">
+                            <div class="sellers__item swiper-slide">
+                                <div class="sellers__preview">
+                                    <img class="img" src="@img/goods/pmu.png" alt="PMU Machine">
+                                </div>
+                                <h4 class="sellers__title">Power Supply</h4>
+                                <div class="sellers__info">
+                                    <div class="sellers__prices">
+                                        <span class="sellers__price sellers__price_old">$490.00</span>
+                                        <span class="sellers__price">$370.00</span>
+                                    </div>
+                                    <a class="btn btn_dark btn_outline" href="#">View more</a>
+                                </div>
+                            </div>
+                            <div class="sellers__item swiper-slide">
+                                <div class="sellers__preview">
+                                    <img class="img" src="@img/goods/power-supply.png" alt="PMU Machine">
+                                </div>
+                                <h4 class="sellers__title">Power Supply</h4>
+                                <div class="sellers__info">
+                                    <div class="sellers__prices">
+                                        <span class="sellers__price sellers__price_old">$490.00</span>
+                                        <span class="sellers__price">$370.00</span>
+                                    </div>
+                                    <a class="btn btn_dark btn_outline" href="#">View more</a>
+                                </div>
+                            </div>
+                            <div class="sellers__item swiper-slide">
+                                <div class="sellers__preview">
+                                    <img class="img" src="@img/goods/set.png" alt="PMU Machine">
+                                </div>
+                                <h4 class="sellers__title">Power Supply</h4>
+                                <div class="sellers__info">
+                                    <div class="sellers__prices">
+                                        <span class="sellers__price sellers__price_old">$490.00</span>
+                                        <span class="sellers__price">$370.00</span>
+                                    </div>
+                                    <a class="btn btn_dark btn_outline" href="#">View more</a>
+                                </div>
+                            </div>
+                            <div class="sellers__item swiper-slide">
+                                <div class="sellers__preview">
+                                    <img class="img" src="@img/goods/cartridge.png" alt="PMU Machine">
+                                </div>
+                                <h4 class="sellers__title">Power Supply</h4>
+                                <div class="sellers__info">
+                                    <div class="sellers__prices">
+                                        <span class="sellers__price sellers__price_old">$490.00</span>
+                                        <span class="sellers__price">$370.00</span>
+                                    </div>
+                                    <a class="btn btn_dark btn_outline" href="#">View more</a>
+                                </div>
+                            </div>
+                            <div class="sellers__item swiper-slide">
+                                <div class="sellers__preview">
+                                    <img class="img" src="@img/goods/power-supply.png" alt="PMU Machine">
+                                </div>
+                                <h4 class="sellers__title">Power Supply</h4>
+                                <div class="sellers__info">
+                                    <div class="sellers__prices">
+                                        <span class="sellers__price sellers__price_old">$490.00</span>
+                                        <span class="sellers__price">$370.00</span>
+                                    </div>
+                                    <a class="btn btn_dark btn_outline" href="#">View more</a>
+                                </div>
+                            </div>
+                            <div class="sellers__item swiper-slide">
+                                <div class="sellers__preview">
+                                    <img class="img" src="@img/goods/pmu.png" alt="PMU Machine">
+                                </div>
+                                <h4 class="sellers__title">Power Supply</h4>
+                                <div class="sellers__info">
+                                    <div class="sellers__prices">
+                                        <span class="sellers__price sellers__price_old">$490.00</span>
+                                        <span class="sellers__price">$370.00</span>
+                                    </div>
+                                    <a class="btn btn_dark btn_outline" href="#">View more</a>
+                                </div>
+                            </div>
+                            <div class="sellers__item swiper-slide">
+                                <div class="sellers__preview">
+                                    <img class="img" src="@img/goods/pmu.png" alt="PMU Machine">
+                                </div>
+                                <h4 class="sellers__title">Power Supply</h4>
+                                <div class="sellers__info">
+                                    <div class="sellers__prices">
+                                        <span class="sellers__price sellers__price_old">$490.00</span>
+                                        <span class="sellers__price">$370.00</span>
+                                    </div>
+                                    <a class="btn btn_dark btn_outline" href="#">View more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <div class="swiper-scrollbar"></div>
+                    </div><!-- /.swiper-sellers -->
+                </div><!-- /.sellers__wrapper -->
+            </div><!-- /.container -->
+        </section><!-- /.sellers -->
+
+
+        <!-- Features -->
+        <section class="features">
+            <div class="features__container">
+                <div class="features__row">
+                    <div class="features__info">
+                        <h4 class="features__title">What is a Quality Permanent Make-up Procedure?</h4>
+                        <div class="features__text">Quality permanent makeup is Quality <a href="#">pigment</a> + Quality <a href="#">equipment</a> and <a href="#">needles</a> + Quality work of the <a href="#">Artist</a></div>
+                        <a data-da=".features__row, 769, last" class="features__btn btn btn_light btn_outline" href="#">
+                            <span>Learn more</span>
+                            <svg>
+                                <use href="@img/icons/icons.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="features__photo">
+                        <img class="img" src="@img/people/2.jpg" alt="Women">
+                        <div class="features__caption caption">At GGB we provide<br><b>everything</b> <span>for your success</span></div>
+                    </div>
+                </div>
+                <div class="features__row features__row_last">
+                    <div class="features__info">
+                        <h4 class="features__title">Become a GGB PMU Artist and love what you do, while at the same time</h4>
+                        <ul class="features__text features__list">
+                            <li>Earning six figures annually</li>
+                            <li>Being your own boss</li>
+                            <li>Making your own schedule</li>
+                            <li>Helping others look and feel their best</li>
+                        </ul>
+                        <a data-da=".features__row_last, 769, last" class="features__btn btn btn_light btn_outline" class="btn btn_light btn_outline" href="#">
+                            <span>Learn more</span>
+                            <svg>
+                                <use href="@img/icons/icons.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="features__photo">
+                        <img class="img" src="@img/people/3.png" alt="Women">
+                        <div class="features__caption caption">Helping others look<br><b>and</b> <span>feel their best</span></div>
+                    </div>
+                </div>
+            </div><!-- /.features__container -->
+        </section><!-- /.features -->
+
+
+
+        <!-- Hero-block -->
+        <div class="hero-block">
+            <img class="hero-block__img img" src="@img/hero-img.jpg" alt="">
         </div>
 
 
+
+        <!-- Reviews -->
+        <section class="reviews section">
+            <div class="reviews__container">
+                <div class="section__header">
+                    <div class="section__header__wrapper">
+                        <h2 class="section__title">Clients talk about us</h2>
+                        <div class="section__caption caption">Customer reviews</div>
+                    </div>
+                </div>
+                <div class="reviews__wrapper">
+                    <div class="swiper-reviews swiper">
+                        <div class="swiper-wrapper">
+                            <div class="reviews__item swiper-slide">
+                                <div class="reviews__header">
+                                    <span class="reviews__name">Makita L.</span>
+                                    <div class="reviews__rating"></div>
+                                </div>
+                                <div class="reviews__text">I'm kind of a newbie, but I really love Powder Brush. My hand doesn't hurt and I really like my healed results. This is my second machine, the first one was wireless and came with my class, it was not strong.</div>
+                            </div>
+                            <div class="reviews__item swiper-slide">
+                                <div class="reviews__header">
+                                    <span class="reviews__name">Alison T.</span>
+                                    <div class="reviews__rating"></div>
+                                </div>
+                                <div class="reviews__text">Great quality needles and fits great to all my pmu machine. Ink flows well. Fast delivery.</div>
+                            </div>
+                            <div class="reviews__item swiper-slide">
+                                <div class="reviews__header">
+                                    <span class="reviews__name">Olga Vareshek</span>
+                                    <div class="reviews__rating"></div>
+                                </div>
+                                <div class="reviews__text">Liquid Powder brow pigments been a massive game-changer for me. I have tried several brands and always struggled with grey or orange residue when my clients come for touch-ups. These pigments become lighter brown after time and colors are really beautiful. I'm so happy to finally find something good and will never use another brand.</div>
+                            </div>
+                            <div class="reviews__item swiper-slide">
+                                <div class="reviews__header">
+                                    <span class="reviews__name">Sherry G. Saenz</span>
+                                    <div class="reviews__rating"></div>
+                                </div>
+                                <div class="reviews__text">The best PMU machine I have ever tried! I like working with long stroke machines for powder brows, but they where always super heavy. This one is comfortable. And I like that the cord is light too. </div>
+                            </div>
+                            <div class="reviews__item swiper-slide">
+                                <div class="reviews__header">
+                                    <span class="reviews__name">Makita L.</span>
+                                    <div class="reviews__rating"></div>
+                                </div>
+                                <div class="reviews__text">I'm kind of a newbie, but I really love Powder Brush. My hand doesn't hurt and I really like my healed results. This is my second machine, the first one was wireless and came with my class, it was not strong.</div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div><!-- /.swiper-reviews -->
+                </div><!-- /.reviews__wrapper -->
+            </div><!-- /.reviews__container -->
+        </section><!-- /.reviews -->
+
+
+
+        <!-- Socials -->
+        <section class="socials section">
+            <div class="socials__container">
+                <div class="section__header">
+                    <div class="section__header__wrapper">
+                        <h2 class="section__title">Instagram</h2>
+                        <div class="section__caption caption">@ girlgotbrows</div>
+                    </div>
+                </div>
+                <div class="socials__wrapper">
+                    <div class="swiper-socials swiper">
+                        <div class="swiper-wrapper">
+                            <div class="socials__item swiper-slide">
+                                <img class="img" src="@img/instagram/1.jpg" alt="instagram photo">
+                            </div>
+                            <div class="socials__item swiper-slide">
+                                <img class="img" src="@img/instagram/2.jpg" alt="instagram photo">
+                            </div>
+                            <div class="socials__item swiper-slide">
+                                <img class="img" src="@img/instagram/3.jpg" alt="instagram photo">
+                            </div>
+                            <div class="socials__item swiper-slide">
+                                <img class="img" src="@img/instagram/4.jpg" alt="instagram photo">
+                            </div>
+                            <div class="socials__item swiper-slide">
+                                <img class="img" src="@img/instagram/5.jpg" alt="instagram photo">
+                            </div>
+                            <div class="socials__item swiper-slide">
+                                <img class="img" src="@img/instagram/1.jpg" alt="instagram photo">
+                            </div>
+                            <div class="socials__item swiper-slide">
+                                <img class="img" src="@img/instagram/3.jpg" alt="instagram photo">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div><!-- /.swiper-socials -->
+                </div><!-- /.socials__wrapper -->
+            </div><!-- /.socials__container -->
+        </section><!-- /.socials -->
     </main>
     @@include('partials/footer.html', {})
     <script src="js/app.min.js"></script>
 </body>
+
 
 </html>

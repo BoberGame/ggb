@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="files/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon/favicon-16x16.png">
+    <link rel="manifest" href="files/favicon/site.webmanifest">
+    <link rel="mask-icon" href="files/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Card</title>
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__container">
+        <div class="header__top">
+            <div class="header__left">
+                <div class="header__submenu submenu-header">
+                    <a class="submenu-header__name" href="#">Store</a>
+                    <button class="btn_icon" type="button" data-menu=".submenu-header__wrapper">
+                        <svg class="header__icon-drop">
+                            <use href="img/icons/icons.svg#dropdown"></use>
+                        </svg>
+                    </button>
+                    <div class="submenu-header__wrapper" data-da=".hover-menu__wrapper, 768">
+                        <ul class="submenu-header__menu">
+                            <li class="submenu-header__item">
+                                <a class="submenu-header__link" href="academy.html">All PMU courses</a>
+                            </li>
+                            <li class="submenu-header__item">
+                                <a class="submenu-header__link" href="#">Bloodborne Pathogen & Communicable Disease course</a>
+                            </li>
+                            <li class="submenu-header__item">
+                                <a class="submenu-header__link" href="#">Student Portal</a>
+                            </li>
+                            <li class="submenu-header__item">
+                                <a class="submenu-header__link" href="#">About GGB Academy</a>
+                            </li>
+                            <li class="submenu-header__item">
+                                <a class="submenu-header__link" href="#">PMU Courses</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.submenu-header -->
+                <div class="header__submenu submenu-header">
+                    <a class="submenu-header__name" href="#">Academy</a>
+                    <button class="btn_icon" type="button" data-menu=".submenu-header">
+                        <svg class="header__icon-drop">
+                            <use href="img/icons/icons.svg#dropdown"></use>
+                        </svg>
+                    </button>
+                    <div class="submenu-header__wrapper">
+                        <ul class="submenu-header__menu">
+                            <li class="submenu-header__item">
+                                <a class="submenu-header__link" href="academy.html">All PMU courses All PMU courses</a>
+                            </li>
+                            <li class="submenu-header__item">
+                                <a class="submenu-header__link" href="#">BloodbornAll PMU coursese Pathogen & Communicable Disease course</a>
+                            </li>
+                            <li class="submenu-header__item">
+                                <a class="submenu-header__link" href="#">StudeAll PMU coursesnt Portal</a>
+                            </li>
+                            <li class="submenu-header__item">
+                                <a class="submenu-header__link" href="#">About All PMU coursesGGB Academy</a>
+                            </li>
+                            <li class="submenu-header__item">
+                                <a class="submenu-header__link" href="#">PMU Courses</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.submenu-header -->
+            </div><!-- /.header__left -->
+            
+            <a class="header__logo" href="index.html">
+                <img class="img" src="img/logo.svg" alt="Logo">
+                <span>Girl got brows&#8482;</span>
+            </a>
+            
+            <div class="header__right">
+                <div class="header__select select">
+                    <div class="header-select__header select__header">
+                        <span class="header-select__current select__current" data-lang>EN</span>
+                        <button class="btn_icon">
+                            <svg class="header__icon-drop">
+                                <use href="img/icons/icons.svg#dropdown"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="header-select__body select__body">
+                        <div class="header-select__item select__item active">English</div>
+                        <div class="header-select__item select__item">Russian</div>
+                        <div class="header-select__item select__item">Spanish</div>
+                    </div>
+                </div>
+                <div class="header__menu menu-header">
+                    <a class="menu-header__link" href="#" id="searchOpen">
+                        <svg>
+                            <use href="img/icons/icons.svg#search"></use>
+                        </svg>
+                    </a>
+                    <a class="menu-header__link btn_icon" href="profile.html">
+                        <svg>
+                            <use href="img/icons/icons.svg#person" />
+                        </svg>
+                    </a>
+                    <a class="menu-header__link menu-header__link_count btn_icon" href="cart.html">
+                        <svg>
+                            <use href="img/icons/icons.svg#cart" />
+                        </svg>
+                        <span class="menu-header__count">99</span>
+                    </a>
+                </div>
+                <div class="menu-burger">
+                    <span></span>
+                </div>
+            </div>
+
+        </div><!-- /.header__top -->
+
+    </div><!-- /.header__container -->
+    <nav class="header__nav nav">
+        <div class="nav__container">
+            <div class="nav__wrapper">
+                <ul class="nav__menu nav__left">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Cartridges</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Pigments</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="distributors.html">partnership</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Educational</a>
+                    </li>
+                </ul>
+                <ul class="nav__menu nav__right">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Get Help</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">CUSTOMER SERVICE</a>
+                    </li>
+                </ul>
+                <div class="nav__hover-menu hover-menu">
+                    <div class="hover-menu__container">
+                        <ul class="hover-menu__list">
+                            <li class="hover-menu__item">
+                                <a class="hover-menu__link" href="#">
+                                    <img class="hover-menu__icon" src="img/header/1.svg" alt="PMU Supplies">
+                                    <span>PMU Supplies</span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a class="hover-menu__link" href="#">
+                                    <img class="hover-menu__icon" src="img/header/2.svg" alt="Pigments">
+                                    <span>Pigments</span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a class="hover-menu__link" href="#">
+                                    <img class="hover-menu__icon" src="img/header/3.svg" alt="Needles">
+                                    <span>Needles</span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item">
+                                <a class="hover-menu__link " href="#">
+                                    <img class="hover-menu__icon" src="img/header/4.svg" alt="Academy">
+                                    <span>Academy</span>
+                                </a>
+                                <button class="hover-menu__btn btn_icon" type="button" data-menu=".submenu-header__wrapper">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow-l"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="hover-menu__item last">
+                                <a class="hover-menu__link" href="#">
+                                    <img class="hover-menu__icon" src="img/header/5.svg" alt="Educational">
+                                    <span>Educational</span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item all">
+                                <a class="hover-menu__link" href="#">
+                                    <img class="hover-menu__icon" src="img/header/6.svg" alt="All products">
+                                    <span>All products</span>
+                                </a>
+                            </li>
+                            <li class="hover-menu__item hover-menu__item_mob">
+                                <a class="hover-menu__link" href="#">About GGB Brand</a>
+                            </li>
+                            <li class="hover-menu__item hover-menu__item_mob">
+                                <a class="hover-menu__link" href="#">Partnership</a>
+                            </li>
+                            <li class="hover-menu__item hover-menu__item_mob">
+                                <a class="hover-menu__link" href="#">Customer service</a>
+                            </li>
+                            <li class="hover-menu__item hover-menu__item_mob">
+                                <a class="hover-menu__link" href="#">Get help</a>
+                            </li>
+                            <li class="hover-menu__item hover-menu__item_login hover-menu__item_mob">
+                                <a class="hover-menu__link btn_icon" href="#">
+                                    <svg class="hover-menu__icon">
+                                        <use href="img/icons/icons.svg#person" />
+                                    </svg>
+                                    <span>Login</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="hover-menu__wrapper">
+                            <div class="hover-menu__item">
+                                <button class="hover-menu__btn hover-menu__btn_back btn_icon" type="button" data-menu=".submenu-header__wrapper">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow-l"></use>
+                                    </svg>
+                                </button>
+                                <a class="hover-menu__link" href="#">
+                                    <span>Back</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search__menu">
+            <div class="search__container">
+                <form class="search__wrapper" id="searchForm" action="search.html">
+                    <button class="search__btn btn_icon" type="submit" id="searchBtn">
+                        <svg>
+                            <use href="img/icons/icons.svg#search"></use>
+                        </svg>
+                    </button>
+                    <input
+                        class="search__input"
+                        type="text"
+                        placeholder="Start typing your search query">
+                    <button class="search__btn search__close btn_icon" type="button" id="searchClose">
+                        <svg>
+                            <use href="img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav><!-- /.header__nav -->
+</header><!-- /.header -->
+    <main class="page">
+        <section class="card-page">
+            <div class="card-page__container">
+                <div class="card-page__wrapper">
+                    <div class="card-page__preview">
+                        <div class="card-page__img card-page__img_main">
+                            <img class="img" src="img/goods/pmu.png" alt="">
+                            <button class="card-page__play btn_icon play__btn" type="button" data-playShow>
+                                <svg class="play__icon">
+                                    <use href="img/icons/icons.svg#play"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="card-page__swiper swiper-img swiper">
+                            <div class="card-page__swiper-wrapper swiper-wrapper">
+                                <div class="card-page__img swiper-slide">
+                                    <img class="img" src="img/goods/pmu.png" alt="">
+                                </div>
+                                <div class="card-page__img swiper-slide">
+                                    <img class="img" src="img/goods/schema.jpg" alt="">
+                                </div>
+                                <div class="card-page__img swiper-slide">
+                                    <img class="img" src="img/goods/pen.png" alt="">
+                                </div>
+                                <div class="card-page__img swiper-slide">
+                                    <img class="img" src="img/goods/sketch.png" alt="">
+                                </div>
+                                <div class="card-page__img swiper-slide">
+                                    <img class="img" src="img/goods/schema.jpg" alt="">
+                                </div>
+                                <div class="card-page__img card-page__img_video swiper-slide" data-da=".card-page__img_main, 769, first" data-videoShow>
+                                    <video class="card-page__video play__video" controls>
+                                        <source src="files/video/video-1.webm" type="video/webm">
+                                        <source src="files/video/video-1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <div class="card-page__info">
+                        <h2 class="card-page__name">PMU MACHINE</h2>
+                        <div class="card-page__prices card__prices">
+                            <span class="card-page__cost card__cost">$385.00</span>
+                            <span class="card-page__cost card__cost card__cost_old">$275.00</span>
+                        </div>
+                        <div class="card-page__cart">
+                            <div class="card-page__counter counter">
+                                <button class="counter__btn btn_icon" type="button" data-counter="minus">–</button>
+                                <input
+                                    class="counter__input"
+                                    type="number"
+                                    value="1"
+                                    disabled>
+                                <button class="counter__btn btn_icon" type="button" data-counter="plus">+</button>
+                            </div>
+                            <button class="card-page__btn btn btn_dark" type="button">Add to cart</button>
+                        </div>
+                        <div class="card-page__desc desc">
+                            <ul class="desc__list">
+                                <li class="desc__item">Core Curriculum:</li>
+                                <li class="desc__item">Overview of permanent makeup procedures</li>
+                                <li class="desc__item">Maintaining professional dress code and conduct</li>
+                                <li class="desc__item">Business skills</li>
+                                <li class="desc__item">Complete skin analysis</li>
+                                <li class="desc__item">Skin colors and classifications</li>
+                                <li class="desc__item">Recognizing skin disorders</li>
+                                <li class="desc__item">Contraindications</li>
+                                <li class="desc__item">Sanitation and disinfection of the workplace</li>
+                                <li class="desc__item">Aseptic procedure</li>
+                                <li class="desc__item">Intake/consent forms</li>
+                                <li class="desc__item">Before/after pictures</li>
+                                <li class="desc__item">Setting up the work environment</li>
+                                <li class="desc__item">Complete analysis of PMU machines and needles</li>
+                                <li class="desc__item">Color theory</li>
+                                <li class="desc__item">Pigments</li>
+                                <li class="desc__item">Choosing the right color</li>
+                                <li class="desc__item">Understanding color correction</li>
+                                <li class="desc__item">Rules of symmetric eyebrows</li>
+                                <li class="desc__item">Sketching on paper</li>
+                                <li class="desc__item">Working with asymmetry</li>
+                                <li class="desc__item">Sketching on live models</li>
+                                <li class="desc__item">Shading methods</li>
+                                <li class="desc__item">Lining methods</li>
+                                <li class="desc__item">Color density and gradient</li>
+                                <li class="desc__item">Practicing on latex</li>
+                                <li class="desc__item">Hand speed</li>
+                                <li class="desc__item">Power supply speed</li>
+                                <li class="desc__item">Hand posture and skin stretch</li>
+                                <li class="desc__item">Pressure</li>
+                                <li class="desc__item">Pigment placement</li>
+                                <li class="desc__item">Eyebrows: step by step</li>
+                                <li class="desc__item">Home care</li>
+                                <li class="desc__item">Follow-up procedure</li>
+                            </ul>
+                            <button class="card-page__btn btn btn_dark btn_outline">See work of our students</button>
+                        </div>
+                        <div class="card-page__desc desc">
+                            <div class="desc__header">
+                                <h3 class="desc__title">LESS information</h3>
+                                <button class="btn_icon">
+                                    <svg class="desc__icon less">
+                                        <use href="img/icons/icons.svg#arrow-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="desc__text">
+                                <p>With our permanent makeup training course, you will receive:</p>
+                                <p>A kit of innovative brand equipment and tools.</p>
+                                <p>Proprietary skills in procedure application on live models, along with client communication and business skills from the top GGB trainer.</p>
+                                <p>Ongoing support and video training tutorials.</p>
+                                <p>A certificate of completion.</p>
+                                <p>A chance to become a Top Artist and Trainer at GGB Academy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-page__related">
+                    <div class="page__header">
+                        <h2 class="page__title">You May Also Like</h2>
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__preview">
+                                <img class="img" src="img/goods/pmu.png" alt="Pmu img">
+                                <div class="card__hover">
+                                    <div class="card__badge">TOP Saless</div>
+                                    <button class="card__btn btn btn_dark">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="card__name"><a href="card.html">PMU Machine</a></h3>
+                                <div class="card__prices">
+                                    <span class="card__cost">$385.00</span>
+                                    <span class="card__cost card__cost_old">$500.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__preview">
+                                <img class="img" src="img/goods/pmu.png" alt="Pmu img">
+                                <div class="card__hover">
+                                    <div class="card__badge">TOP Saless</div>
+                                    <button class="card__btn btn btn_dark">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="card__name"><a href="card.html">PMU Machine</a></h3>
+                                <div class="card__prices">
+                                    <span class="card__cost">$385.00</span>
+                                    <span class="card__cost card__cost_old">$500.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__preview">
+                                <img class="img" src="img/goods/pmu.png" alt="Pmu img">
+                                <div class="card__hover">
+                                    <div class="card__badge">TOP Saless</div>
+                                    <button class="card__btn btn btn_dark">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="card__name"><a href="card.html">PMU Machine</a></h3>
+                                <div class="card__prices">
+                                    <span class="card__cost">$385.00</span>
+                                    <span class="card__cost card__cost_old">$500.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__preview">
+                                <img class="img" src="img/goods/pmu.png" alt="Pmu img">
+                                <div class="card__hover">
+                                    <div class="card__badge">TOP Saless</div>
+                                    <button class="card__btn btn btn_dark">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="card__name"><a href="card.html">PMU Machine</a></h3>
+                                <div class="card__prices">
+                                    <span class="card__cost">$385.00</span>
+                                    <span class="card__cost card__cost_old">$500.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.card-page -->
+    </main>
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__wrapper">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <img class="img" src="img/white-logo.svg" alt="Logo">
+                </div>
+                <div class="footer__subtitle">Be the first one to know about our exclusive offers and much more!</div>
+                <form class="footer__form form" action="/" method="get">
+                    <div class="footer__form-wrapper">
+                        <input class="footer__input form__input" type="email" placeholder="Enter email address">
+                        <button class="footer__btn btn_icon" type="submit">OK</button>
+                    </div>
+                    <label class="form__label form__label_checkbox footer__label" for="footerInput">
+                        <input class="form__checkbox" type="checkbox" name="footerCheckbox" id="footerInput" required>
+                        <span class="form__box form__box_footer"></span>
+                        I agree with the <a href="#">Privacy Policy</a>
+                    </label>
+                </form>
+            </div>
+            <div class="footer__col">
+                <h5 class="footer__title">products</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">PMU Supplies</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Pigments</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Cartridges</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Training programs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5 class="footer__title">Our sites</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Pixel</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Liquid powder</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Studio services</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Student training</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5 class="footer__title">Information</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">About GGB Brand</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">About GGB Academy</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="tutorials.html">Educational tutorials</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">All Product videos</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Shipping</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Returns</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- /.footer__wrapper -->
+        <div class="footer-login">
+            <a class="footer-login__link footer__link" href="log-in.html">Login</a>
+        </div>
+        <div class="footer-socials">
+            <span class="footer-socials__title">Follow us:</span>
+            <div class="footer-socials__items">
+                <a class="footer-socials__link btn_light btn_outline" href="#" target="_blank">
+                    <span>Instagram</span>
+                    <svg class="footer-socials__icon">
+                        <use href="img/icons/icons.svg#socials--inst"></use>
+                    </svg>
+                </a>
+                <a class="footer-socials__link btn_light btn_outline" href="#" target="_blank">
+                    <span>Facebook</span>
+                    <svg class="footer-socials__icon">
+                        <use href="img/icons/icons.svg#socials--fb"></use>
+                    </svg>
+                </a>
+                <a class="footer-socials__link btn_light btn_outline" href="#" target="_blank">
+                    <span>YOUTUBE</span>
+                    <svg class="footer-socials__icon">
+                        <use href="img/icons/icons.svg#socials--yt"></use>
+                    </svg>
+                </a>
+                <a class="footer-socials__link btn_light btn_outline" href="#" target="_blank">
+                    <span>Email</span>
+                    <svg class="footer-socials__icon">
+                        <use href="img/icons/icons.svg#socials--mail"></use>
+                    </svg>
+                </a>
+                <a class="footer-socials__link btn_light btn_outline" href="#" target="_blank">
+                    <span>Whats App</span>
+                    <svg class="footer-socials__icon">
+                        <use href="img/icons/icons.svg#socials--whats"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright copyright">
+            <span class="copyright__title">All Rights Reserved</span>
+            <div class="copyright__links">
+                <a class="copyright__link footer__link" href="#">Privacy Policy</a>
+                <a class="copyright__link footer__link" href="terms.html">Terms of Servise</a>
+            </div>
+        </div>
+    </div><!-- /.footer__container -->
+</footer><!-- /.footer -->
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

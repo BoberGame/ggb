@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('partials/head.html', {
+"title":"Cart"
+})
+
+<body>
+    @@include('partials/header.html', {})
+    <main class="page">
+        <section class="checkout">
+            <div class="checkout__container">
+                <div class="page__header">
+                    <h1 class="page__title">Checkout</h1>
+                </div>
+                <div class="cart__breadcrumbs breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Cart</a>
+                        </li>
+                        <li class="breadcrumbs__item active">
+                            <a class="breadcrumbs__link" href="#">Information</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Shipping</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Payment</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="checkout__wrapper" action="/">
+                    <div class="checkout__left">
+                        <div class="checkout__item">
+                            <div class="form__item">
+                                <div class="form__header">
+                                    <h4 class="form__label">Contact information</h4>
+                                    <div class="form__subtitle">Already have an account? <a class="form__link" href="log-in.html">Log In</a></div>
+                                </div>
+                                
+                                <div class="entered-info">
+                                    <div class="entered-info__item">
+                                        <div class="entered-info__left">
+                                            <span class="entered-info__title">Contact</span>
+                                            <span class="entered-info__data" id="enteredPhone">+7 894 445 65 45</span>
+                                        </div>
+                                        <button class="entered-info__btn checkout__return btn" type="button" id="enteredCharge">Charge</button>
+                                    </div>
+                                    <div class="entered-info__item">
+                                        <div class="entered-info__left">
+                                            <span class="entered-info__title">Ship to</span>
+                                            <div class="entered-info__data" id="enteredShipping">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+                                        </div>
+                                        <button class="entered-info__btn checkout__return btn" type="button" id="enteredMethod">Charge</button>
+                                    </div>
+                                    <div class="entered-info__item">
+                                        <div class="entered-info__left">
+                                            <span class="entered-info__title">Method</span>
+                                            <span class="entered-info__data" id="enteredPayment">Standart - Free</span>
+                                        </div>
+                                        <button class="entered-info__btn checkout__return btn" type="button" id="enteredCharge">Charge</button>
+                                    </div>
+                                </div><!-- /.entered-info -->
+                                
+                                <div class="form__input__wrapper">
+                                    <input
+                                        class="form__input form__input_small"
+                                        type="text"
+                                        placeholder="Email or mobile phone number"
+                                        required>
+                                    <span>
+                                        <svg>
+                                            <use href="@img/icons/icons.svg#exclamation"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <label class="form__label form__label_checkbox" for="checkoutEmail">
+                                    <input
+                                        class="form__checkbox" 
+                                        type="checkbox" 
+                                        name="checkoutEMailCheckbox" 
+                                        id="checkoutEmail">
+                                    <span class="form__box"></span>
+                                    Email me with news and offers
+                                </label>
+                            </div>
+                        </div>
+                        <div class="checkout__item">
+                            <div class="form__item">
+                                <div class="form__header">
+                                    <h4 class="form__label">Shipping address</h4>
+                                </div>
+                                <div class="form__input__wrapper">
+                                    <input
+                                        class="form__input form__input_small"
+                                        type="text"
+                                        placeholder="Country/rerion"
+                                        required>
+                                    <span>
+                                        <svg>
+                                            <use href="@img/icons/icons.svg#exclamation"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="form__several">
+                                    <div class="form__input__wrapper">
+                                        <input
+                                            class="form__input form__input_small"
+                                            type="text"
+                                            placeholder="First name"
+                                            required>
+                                        <span>
+                                            <svg>
+                                                <use href="@img/icons/icons.svg#exclamation"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="form__input__wrapper">
+                                        <input
+                                            class="form__input form__input_small"
+                                            type="text"
+                                            placeholder="Last name"
+                                            required>
+                                        <span>
+                                            <svg>
+                                                <use href="@img/icons/icons.svg#exclamation"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form__input__wrapper">
+                                    <input
+                                        class="form__input form__input_small"
+                                        type="text"
+                                        placeholder="Address"
+                                        required>
+                                    <span>
+                                        <svg>
+                                            <use href="@img/icons/icons.svg#exclamation"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="form__input__wrapper">
+                                    <input
+                                        class="form__input form__input_small"
+                                        type="text"
+                                        placeholder="Apartment, suite, etc. (optional)"
+                                        required>
+                                    <span>
+                                        <svg>
+                                            <use href="@img/icons/icons.svg#exclamation"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="form__several">
+                                    <div class="form__input__wrapper">
+                                        <input
+                                            class="form__input form__input_small"
+                                            type="text"
+                                            placeholder="City"
+                                            required>
+                                        <span>
+                                            <svg>
+                                                <use href="@img/icons/icons.svg#exclamation"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="form__input__wrapper">
+                                        <input
+                                            class="form__input form__input_small"
+                                            type="text"
+                                            placeholder="Postcode"
+                                            required>
+                                        <span>
+                                            <svg>
+                                                <use href="@img/icons/icons.svg#exclamation"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <label class="form__label form__label_checkbox" for="checkoutAgreeInput">
+                                    <input
+                                        class="form__checkbox" 
+                                        type="checkbox" 
+                                        name="checkoutAgreeCheckbox" 
+                                        id="checkoutAgreeInput">
+                                    <span class="form__box"></span>
+                                    Save this information for next time
+                                </label>
+                            </div>
+                        </div>
+                        <div class="checkout__item">
+                            <div class="form__item">
+                                <div class="form__header">
+                                    <h4 class="form__label">Payment method</h4>
+                                </div>
+                                <label class="form__label form__label_radio" for="checkoutPayment1">
+                                    <input
+                                        class="form__radio"
+                                        type="radio"
+                                        name="checkoutPaymentRadio"
+                                        id="checkoutPayment1"
+                                        checked
+                                        required>
+                                    <span class="form__box form__box_radio"></span>
+                                    <span class="form__radio__text">Standart</span>
+                                    <span class="form__radio__text form__radio__text_right">Free</span>
+                                </label>
+                                <label class="form__label form__label_radio" for="checkoutPayment2">
+                                    <input
+                                        class="form__radio"
+                                        type="radio"
+                                        name="checkoutPaymentRadio"
+                                        id="checkoutPayment2"
+                                        required>
+                                    <span class="form__box form__box_radio"></span>
+                                    <span class="form__radio__text">Standart</span>
+                                    <span class="form__radio__text form__radio__text_right">$7.00</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="checkout__item">
+                            <div class="form__item">
+                                <div class="form__header">
+                                    <h4 class="form__label">Shipping method</h4>
+                                </div>
+                                <label class="form__label form__label_radio" for="checkoutShipping1">
+                                    <input
+                                        class="form__radio"
+                                        type="radio"
+                                        name="checkoutShippingRadio"
+                                        id="checkoutShipping1"
+                                        checked
+                                        required>
+                                    <span class="form__box form__box_radio"></span>
+                                    <span class="form__radio__text">Same as shipping address</span>
+                                </label>
+                                <label class="form__label form__label_radio" for="checkoutShipping2">
+                                    <input
+                                        class="form__radio"
+                                        type="radio"
+                                        name="checkoutShippingRadio"
+                                        id="checkoutShipping2"
+                                        required>
+                                    <span class="form__box form__box_radio"></span>
+                                    <span class="form__radio__text">Use a different billing address</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="checkout__footer">
+                            <button class="checkout__btn btn btn_dark" type="submit">Continue to shipping</button>
+                            <a class="checkout__return btn" href="cart.html">Return to basket</a>
+                        </div>
+                    </div>
+                    <div class="checkout__right">
+                        <div class="checkout__items">
+                            <div class="cart__item cart__item_checkout">
+                                <img class="cart__preview cart__preview_checkout" src="@img/goods/pmu.png" alt="">
+                                <div class="cart__info">
+                                    <h4 class="cart__name cart__name_checkout">Microfine Pen</h4>
+                                    <div class="cart__price cart__price_total">$375.00</div>
+                                </div>
+                                <span class="cart__number">1</span>
+                            </div>
+                            <div class="cart__item cart__item_checkout">
+                                <img class="cart__preview cart__preview_checkout" src="@img/goods/pen.png" alt="">
+                                <div class="cart__info">
+                                    <h4 class="cart__name cart__name_checkout">Microfine Pen</h4>
+                                    <div class="cart__price cart__price_total">$375.00</div>
+                                </div>
+                                <span class="cart__number">2</span>
+                            </div>
+                            <div class="cart__item cart__item_checkout">
+                                <img class="cart__preview cart__preview_checkout" src="@img/goods/sketch.png" alt="">
+                                <div class="cart__info">
+                                    <h4 class="cart__name cart__name_checkout">Microfine Scketch</h4>
+                                    <div class="cart__price cart__price_total">$375.00</div>
+                                </div>
+                                <span class="cart__number">3</span>
+                            </div>
+                        </div>
+                        <div class="checkout__discount">
+                            <div class="form__several">
+                                <div class="form__input__wrapper">
+                                    <input
+                                        class="form__input form__input_small"
+                                        type="text"
+                                        placeholder="Discount code">
+                                    <span>
+                                        <svg>
+                                            <use href="@img/icons/icons.svg#exclamation"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <button class="checkout__discount__btn btn btn_sm btn_grey">Apply</button>
+                            </div>
+                        </div>
+                        <div class="checkout-prices">
+                            <div class="checkout__subtotal">
+                                <div class="checkout-prices__item">
+                                    <span class="checkout-prices__title">Subtotal</span>
+                                    <span class="checkout-prices__price">$1 314.00</span>
+                                </div>
+                                <div class="checkout-prices__item">
+                                    <span class="checkout-prices__title">Shipping</span>
+                                    <span class="checkout-prices__title">Calculated at next step</span>
+                                </div>
+                            </div>
+                            <div class="checkout__total">
+                                <div class="checkout-prices__item">
+                                    <span class="checkout-prices__title checkout-prices__title_total">Total</span>
+                                    <span class="checkout-prices__price checkout-prices__price_total">$132.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div><!-- /.checkout__container -->
+        </section><!-- /.checkout -->
+    </main>
+    @@include('partials/footer.html', {})
+    <!-- @@include('partials/cart-popup.html', {}) -->
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

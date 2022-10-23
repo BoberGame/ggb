@@ -1,0 +1,84 @@
+.section {
+  margin: rem(120) 0;
+
+  @media (max-width: $mobile) {
+    margin: rem(60) 0;
+  }
+
+  &__header {
+    display: inline-flex;
+    @include adaptiv-value(gap, 50, 20, 0);
+    margin-bottom: rem(50);
+
+    &__wrapper {
+      position: relative;
+      width: 100%;
+
+      @media (max-width: $mobile) {
+        &:not(.section__header__wrapper_academy) {
+          max-width: rem(250);
+        }
+      }
+
+      &_academy {
+        max-width: rem(320);
+      }
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      margin-bottom: rem(35);
+    }
+  }
+
+  &__title {
+    width: 100%;
+    @include adaptiv-value(font-size, 40, 30, 0);
+    font-weight: 500;
+    color: var(--black);
+    line-height: 1.35;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: rem(18);
+    line-height: 1.6;
+    color: var(--black);
+
+    @media (max-width: $tablet) {
+      font-size: rem(16);
+    }
+  }
+
+  &__caption {
+    right: rem(-65);
+    bottom: rem(-17);
+
+    color: var(--grey);
+    @include adaptiv-value(font-size, 40, 25, 0);
+    transform: rotate(-5deg);
+    line-height: 0.7;
+
+    &_academy {
+      right: rem(-40);
+      bottom: rem(-5);
+
+      @media (max-width: $tablet) {
+        right: -20%;
+        bottom: 20%;
+      }
+
+      @media (max-width: $mobile) {
+        right: -13%;
+      }
+
+      @media (max-width: $mobile-sm) {
+        right: -10%;
+      }
+
+      @media (max-width: $mobile-xs) {
+        right: -4%;
+      }
+    }
+  }
+}

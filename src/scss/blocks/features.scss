@@ -1,0 +1,151 @@
+.features {
+  padding: rem(120) 0;
+
+  background-color: var(--black);
+
+  &__container {}
+
+  &__row {
+    display: flex;
+    align-items: center;
+    padding-right: rem(50);
+    gap: rem(100) rem(80);
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      padding-left: rem(50);
+      padding-right: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(100);
+    }
+
+    @media (max-width: $tablet) {
+      padding-right: 0;
+      column-gap: rem(50);
+
+      &:nth-child(even) {
+        padding-left: 0;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: rem(30);
+      padding-right: 0;
+      text-align: center;
+
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: rem(80);
+      }
+    }
+  }
+
+  &__info {
+    flex: 0 1 50%;
+  }
+
+  &__title {
+    margin-bottom: rem(40);
+
+    font-weight: 500;
+    @include adaptiv-value(font-size, 50, 30, 0);
+    line-height: 1.2;
+    color: var(--white);
+
+    @media (max-width: $tablet) {
+      margin-bottom: rem(25);
+    }
+  }
+
+  &__text {
+    margin-bottom: rem(40);
+    max-width: 66%;
+
+    font-size: rem(20);
+    line-height: 1.8;
+    color: var(--grey);
+
+    @media (max-width: $tablet) {
+      max-width: none;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 0;
+
+      font-size: rem(16);
+    }
+
+    a {
+      color: inherit;
+      font-style: italic;
+      text-decoration: underline;
+    }
+  }
+
+  &__btn {}
+
+  &__list {
+    padding-left: rem(25);
+    max-width: none;
+    list-style: disc;
+
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 0;
+
+      li {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__photo {
+    flex-grow: 0;
+    position: relative;
+
+    img {
+      border-radius: rem(5);
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: rem(65);
+    }
+  }
+
+  &__caption {
+    // left: rem(-80);
+    left: -5%;
+    // left: 0;
+    // bottom: rem(-45);
+    bottom: -7%;
+
+    @media (max-width: $tablet) {
+      // left: 0;
+    }
+
+    @media (max-width: $mobile-sm) {
+      left: -10%;
+    }
+
+    @include adaptiv-value(font-size, 44, 30, 0);
+    line-height: 1.1;
+
+    span:after {
+      bottom: rem(20);
+    }
+
+    b {
+      font-weight: 400;
+      padding-left: rem(90);
+      // padding-left: 10%;
+    }
+  }
+}

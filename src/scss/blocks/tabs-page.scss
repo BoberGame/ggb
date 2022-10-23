@@ -1,0 +1,132 @@
+.tabs-page {
+  @include adaptiv-value(padding-top, 250, 110, 1);
+  margin-bottom: rem(120);
+
+  @media (max-width: $mobile) {
+    margin-bottom: rem(80);
+  }
+
+  &__header {
+    margin-left: 22%;
+
+    @media (max-width: $mobile) {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    @include adaptiv-value(column-gap, 80, 40, 0);
+    margin-top: rem(40);
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: rem(40);
+    }
+  }
+
+  &__sidebar {
+    @media (min-width: $mobile) {
+      flex: 0 1 percent(200, 1200);
+    }
+  }
+
+  &__content {
+    flex: 0 1 percent(700, 1200);
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__text {
+    color: var(--black);
+    font-size: rem(16);
+    line-height: 1.65;
+
+    p {
+      margin-bottom: rem(15);
+    }
+  }
+
+  &__title,
+  h3 {
+    margin: rem(65) 0 rem(20);
+    font-size: rem(20);
+    font-weight: 600;
+    line-height: 1.5;
+
+    @media (max-width: $mobile) {
+      margin-top: rem(45);
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__list,
+  ul {
+    margin: rem(15) 0;
+    padding-left: rem(25);
+
+    list-style: disc;
+  }
+
+  &__item {}
+
+  &__btn {
+    margin-top: rem(40);
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+
+  @media (max-width: $mobile) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__btn {
+    font-size: rem(18);
+    color: var(--black);
+    line-height: 1.65;
+    font-family: inherit;
+    text-align: left;
+    text-decoration: none;
+
+    &.active {
+      text-decoration: underline;
+      text-underline-offset: rem(2);
+
+      @media (max-width: $mobile) {
+        text-decoration: none;
+        background-color: var(--black);
+        color: var(--white);
+      }
+    }
+
+    @media (max-width: $mobile) {
+      padding: em(3) em(15);
+
+      border: 1px solid var(--black);
+      border-radius: rem(5);
+      text-transform: uppercase;
+      font-size: rem(16);
+      text-align: center;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

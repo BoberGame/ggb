@@ -1,19 +1,35 @@
 body {
-    background-color: var(--background);
-    color: var(--black);
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 400;
-    font-size: var(--regular-size);
+  background-color: var(--background);
+  color: var(--black);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--regular-size);
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+
+  main {
+    overflow: hidden;
+  }
+}
+
+[class*="_container"] {
+  width: 100%;
+  max-width: calc($container-maxwidth + $container-padding);
+  padding-left: calc($container-padding / 2);
+  padding-right: calc($container-padding / 2);
+  margin: 0 auto;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img,
 svg {
-    vertical-align: middle;
+  vertical-align: middle;
 }

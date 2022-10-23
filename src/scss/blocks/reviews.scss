@@ -1,0 +1,45 @@
+.reviews {
+
+  &__container {}
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__item {
+    height: auto;
+    padding: rem(35) rem(30);
+    margin-bottom: rem(60);
+
+    background-color: var(--white);
+
+    @media (max-width: $mobile) {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(20);
+  }
+
+  &__name {
+    color: var(--black);
+    font-size: rem(20);
+    font-weight: 600;
+    line-height: 1.45;
+  }
+
+  &__rating {
+    color: var(--grey);
+    font-size: rem(16);
+  }
+
+  &__text {
+    font-size: rem(16);
+    line-height: 1.6;
+    color: var(--black);
+  }
+}

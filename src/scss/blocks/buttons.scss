@@ -1,0 +1,118 @@
+.btn {
+  display: inline-grid;
+  grid-auto-flow: column;
+  align-items: center;
+  column-gap: em(8);
+  padding: em(8) em(24);
+
+  font-size: rem(16);
+  line-height: 1.6;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: var(--btn-color);
+  cursor: pointer;
+  border: 1px solid transparent;
+
+  background-color: var(--btn-bg);
+  border-radius: em(5);
+  vertical-align: middle;
+  user-select: none;
+  --btn-color: var(--black);
+  transition: all 0.2s ease-out;
+
+  svg {
+    width: em(26);
+    height: em(10);
+  }
+
+  &_outline {
+    background-color: transparent;
+    color: var(--btn-bg);
+    border-color: var(--btn-bg);
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: var(--btn-bg);
+        color: var(--btn-color);
+      }
+    }
+  }
+
+  &_light {
+    --btn-bg: var(--white);
+    --btn-color: var(--black);
+
+    @media (any-hover: hover) {
+      &:not(&.btn_outline) {
+        // &:hover {
+        //   --btn-bg: var(--black);
+        //   --btn-color: var(--white);
+        // }
+      }
+    }
+  }
+
+  &_grey {
+    --btn-bg: #B3B3B3;
+    --btn-color: var(--white);
+
+    @media (any-hover: hover) {
+
+      &:not(&.btn_outline,
+        &:disabled) {
+        &:hover {
+          box-shadow: 1px 1px 4px 3px rgba(25, 25, 25, 0.2);
+        }
+      }
+    }
+  }
+
+  &_dark {
+    --btn-bg: var(--black);
+    --btn-color: var(--white);
+
+    &:disabled {
+      --btn-bg: var(--grey);
+      cursor: default;
+    }
+
+    @media (any-hover: hover) {
+
+      &:not(&.btn_outline,
+        &:disabled) {
+        &:hover {
+          box-shadow: 1px 1px 4px 3px rgba(25, 25, 25, 0.4);
+        }
+      }
+    }
+  }
+
+  &_icon {
+    display: inline-block;
+    padding: 0;
+
+    --btn-color: var(--black);
+    color: var(--btn-color);
+    cursor: pointer;
+    background-color: var(--btn-bg);
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  &_underline {
+    text-decoration: underline;
+    line-height: 1.6;
+    text-underline-offset: rem(3);
+    letter-spacing: 0.01em;
+    text-transform: none;
+  }
+
+  &_100 {
+    width: 100%;
+  }
+
+  
+}

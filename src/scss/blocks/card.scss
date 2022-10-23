@@ -1,0 +1,120 @@
+.card {
+  flex: 1 1 calc((100% / 4) - rem(60));
+
+  @media (max-width: $tablet) {
+    flex-basis: calc((100% / 2) - rem(60));
+  }
+
+  &__preview {
+    position: relative;
+    padding: rem(15);
+    margin-bottom: rem(25);
+
+    background-color: var(--white);
+    border-radius: rem(10);
+
+    &_courses {
+      padding: 0;
+
+      background-color: transparent;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        .card__hover {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(30);
+    margin-top: rem(40);
+  }
+
+  &__hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-out;
+  }
+
+  &__badge {
+    padding: rem(7) rem(11);
+    position: absolute;
+    top: rem(-16);
+
+    background-color: #F35A66;
+    border-radius: rem(5);
+    font-size: rem(15);
+    line-height: 1.45;
+    text-transform: uppercase;
+    color: var(--white);
+    user-select: none;
+  }
+
+  &__info {}
+
+  &__name {
+    font-size: rem(22);
+    line-height: 1.4;
+    color: var(--black);
+    text-transform: uppercase;
+
+    &_courses {
+      font-weight: 600;
+      margin-bottom: rem(10);
+    }
+
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: rem(18);
+    }
+  }
+
+  &__prices {
+    display: flex;
+    align-items: center;
+    column-gap: rem(10);
+  }
+
+  &__cost {
+    font-size: rem(20);
+    color: var(--black);
+    font-weight: 600;
+    line-height: 1.45;
+
+    &_old {
+      text-decoration: line-through;
+      color: var(--grey);
+      font-weight: 400;
+    }
+
+    &_courses {
+      font-size: rem(22);
+    }
+
+    @media (max-width: $mobile) {
+      font-size: rem(18);
+    }
+  }
+}

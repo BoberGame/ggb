@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('partials/head.html', {
+"title":"Card"
+})
+
+<body>
+    @@include('partials/header.html', {})
+    <main class="page">
+        <section class="card-page">
+            <div class="card-page__container">
+                <div class="card-page__wrapper">
+                    <div class="card-page__preview">
+                        <div class="card-page__img card-page__img_main">
+                            <img class="img" src="@img/goods/pmu.png" alt="">
+                            <button class="card-page__play btn_icon play__btn" type="button" data-playShow>
+                                <svg class="play__icon">
+                                    <use href="@img/icons/icons.svg#play"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="card-page__swiper swiper-img swiper">
+                            <div class="card-page__swiper-wrapper swiper-wrapper">
+                                <div class="card-page__img swiper-slide">
+                                    <img class="img" src="@img/goods/pmu.png" alt="">
+                                </div>
+                                <div class="card-page__img swiper-slide">
+                                    <img class="img" src="@img/goods/schema.jpg" alt="">
+                                </div>
+                                <div class="card-page__img swiper-slide">
+                                    <img class="img" src="@img/goods/pen.png" alt="">
+                                </div>
+                                <div class="card-page__img swiper-slide">
+                                    <img class="img" src="@img/goods/sketch.png" alt="">
+                                </div>
+                                <div class="card-page__img swiper-slide">
+                                    <img class="img" src="@img/goods/schema.jpg" alt="">
+                                </div>
+                                <div class="card-page__img card-page__img_video swiper-slide" data-da=".card-page__img_main, 769, first" data-videoShow>
+                                    <video class="card-page__video play__video" controls>
+                                        <source src="files/video/video-1.webm" type="video/webm">
+                                        <source src="files/video/video-1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <div class="card-page__info">
+                        <h2 class="card-page__name">PMU MACHINE</h2>
+                        <div class="card-page__prices card__prices">
+                            <span class="card-page__cost card__cost">$385.00</span>
+                            <span class="card-page__cost card__cost card__cost_old">$275.00</span>
+                        </div>
+                        <div class="card-page__cart">
+                            <div class="card-page__counter counter">
+                                <button class="counter__btn btn_icon" type="button" data-counter="minus">–</button>
+                                <input
+                                    class="counter__input"
+                                    type="number"
+                                    value="1"
+                                    disabled>
+                                <button class="counter__btn btn_icon" type="button" data-counter="plus">+</button>
+                            </div>
+                            <button class="card-page__btn btn btn_dark" type="button">Add to cart</button>
+                        </div>
+                        <div class="card-page__desc desc">
+                            <ul class="desc__list">
+                                <li class="desc__item">Core Curriculum:</li>
+                                <li class="desc__item">Overview of permanent makeup procedures</li>
+                                <li class="desc__item">Maintaining professional dress code and conduct</li>
+                                <li class="desc__item">Business skills</li>
+                                <li class="desc__item">Complete skin analysis</li>
+                                <li class="desc__item">Skin colors and classifications</li>
+                                <li class="desc__item">Recognizing skin disorders</li>
+                                <li class="desc__item">Contraindications</li>
+                                <li class="desc__item">Sanitation and disinfection of the workplace</li>
+                                <li class="desc__item">Aseptic procedure</li>
+                                <li class="desc__item">Intake/consent forms</li>
+                                <li class="desc__item">Before/after pictures</li>
+                                <li class="desc__item">Setting up the work environment</li>
+                                <li class="desc__item">Complete analysis of PMU machines and needles</li>
+                                <li class="desc__item">Color theory</li>
+                                <li class="desc__item">Pigments</li>
+                                <li class="desc__item">Choosing the right color</li>
+                                <li class="desc__item">Understanding color correction</li>
+                                <li class="desc__item">Rules of symmetric eyebrows</li>
+                                <li class="desc__item">Sketching on paper</li>
+                                <li class="desc__item">Working with asymmetry</li>
+                                <li class="desc__item">Sketching on live models</li>
+                                <li class="desc__item">Shading methods</li>
+                                <li class="desc__item">Lining methods</li>
+                                <li class="desc__item">Color density and gradient</li>
+                                <li class="desc__item">Practicing on latex</li>
+                                <li class="desc__item">Hand speed</li>
+                                <li class="desc__item">Power supply speed</li>
+                                <li class="desc__item">Hand posture and skin stretch</li>
+                                <li class="desc__item">Pressure</li>
+                                <li class="desc__item">Pigment placement</li>
+                                <li class="desc__item">Eyebrows: step by step</li>
+                                <li class="desc__item">Home care</li>
+                                <li class="desc__item">Follow-up procedure</li>
+                            </ul>
+                            <button class="card-page__btn btn btn_dark btn_outline">See work of our students</button>
+                        </div>
+                        <div class="card-page__desc desc">
+                            <div class="desc__header">
+                                <h3 class="desc__title">LESS information</h3>
+                                <button class="btn_icon">
+                                    <svg class="desc__icon less">
+                                        <use href="@img/icons/icons.svg#arrow-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="desc__text">
+                                <p>With our permanent makeup training course, you will receive:</p>
+                                <p>A kit of innovative brand equipment and tools.</p>
+                                <p>Proprietary skills in procedure application on live models, along with client communication and business skills from the top GGB trainer.</p>
+                                <p>Ongoing support and video training tutorials.</p>
+                                <p>A certificate of completion.</p>
+                                <p>A chance to become a Top Artist and Trainer at GGB Academy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-page__related">
+                    <div class="page__header">
+                        <h2 class="page__title">You May Also Like</h2>
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__preview">
+                                <img class="img" src="@img/goods/pmu.png" alt="Pmu img">
+                                <div class="card__hover">
+                                    <div class="card__badge">TOP Saless</div>
+                                    <button class="card__btn btn btn_dark">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="card__name"><a href="card.html">PMU Machine</a></h3>
+                                <div class="card__prices">
+                                    <span class="card__cost">$385.00</span>
+                                    <span class="card__cost card__cost_old">$500.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__preview">
+                                <img class="img" src="@img/goods/pmu.png" alt="Pmu img">
+                                <div class="card__hover">
+                                    <div class="card__badge">TOP Saless</div>
+                                    <button class="card__btn btn btn_dark">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="card__name"><a href="card.html">PMU Machine</a></h3>
+                                <div class="card__prices">
+                                    <span class="card__cost">$385.00</span>
+                                    <span class="card__cost card__cost_old">$500.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__preview">
+                                <img class="img" src="@img/goods/pmu.png" alt="Pmu img">
+                                <div class="card__hover">
+                                    <div class="card__badge">TOP Saless</div>
+                                    <button class="card__btn btn btn_dark">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="card__name"><a href="card.html">PMU Machine</a></h3>
+                                <div class="card__prices">
+                                    <span class="card__cost">$385.00</span>
+                                    <span class="card__cost card__cost_old">$500.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__preview">
+                                <img class="img" src="@img/goods/pmu.png" alt="Pmu img">
+                                <div class="card__hover">
+                                    <div class="card__badge">TOP Saless</div>
+                                    <button class="card__btn btn btn_dark">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="card__name"><a href="card.html">PMU Machine</a></h3>
+                                <div class="card__prices">
+                                    <span class="card__cost">$385.00</span>
+                                    <span class="card__cost card__cost_old">$500.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.card-page -->
+    </main>
+    @@include('partials/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
