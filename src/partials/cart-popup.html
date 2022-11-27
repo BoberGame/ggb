@@ -10,18 +10,19 @@
         </div>
         <div class="modal__body">
             <div class="modal__subtitle">All products are for professional use only</div>
-            <div class="modal__form">
-                <button class="modal__btn modal__btn_close btn_icon" type="button" disabled data-close>Close</button>
+            <form class="modal__form" action="checkout-1.html">
+                <button class="modal__btn modal__btn_close btn_icon" type="submit" data-close>Close</button>
                 <label class="form__label form__label_checkbox" for="cartPopupInput">
                     <input
                         class="form__checkbox" 
                         type="checkbox" 
                         name="cartPopupCheckbox" 
-                        id="cartPopupInput">
+                        id="cartPopupInput"
+                        required>
                     <span class="form__box"></span>
                     I acknowledge
                 </label>
-            </div>
+            </form>
         </div>
     </div>
 </div>

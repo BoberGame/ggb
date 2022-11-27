@@ -1,14 +1,15 @@
 .products {
   padding: rem(75) 0;
+  
   background-color: var(--black);
-  position: relative;
-
+ 
   @media (max-width: $mobile) {
     padding: rem(60) 0;
   }
 
   &__wrapper {
     position: relative;
+    max-width: 100%;
   }
 
   &__item {
@@ -53,15 +54,10 @@
 
   &__desc__item {
     line-height: 1.8;
-    // font-size: rem(20);
     @include adaptiv-value(font-size, 20, 16, 0);
     color: var(--grey);
     font-weight: 500;
     font-style: italic;
-
-    // @media (max-width: $laptop) {
-    //   font-size: rem(16);
-    // }
 
     strong {
       margin-right: em(6);
@@ -81,12 +77,6 @@
 
     @media (max-width: $mobile) {
       column-gap: rem(30);
-    }
-  }
-
-  &__btn {
-    @media (max-width: $tablet) {
-      // width: rem(160);
     }
   }
 }

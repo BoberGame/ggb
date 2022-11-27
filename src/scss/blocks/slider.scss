@@ -1,9 +1,9 @@
 .swiper {
-  // position: static;
+  position: static;
 
   & .swiper-wrapper {
-    // position: static;
-   
+    position: static;
+
   }
 }
 
@@ -49,27 +49,18 @@
 }
 
 .swiper-button-prev {
-  // left: percent(-60, 1200);
-  // left: rem(-60);
-  // right: 95%;
-  left: 0;
+  left: rem(-10);
+  
+  @media (min-width: $laptop-lg) {
+    left: rem(-65);
+  }
 }
 
 .swiper-button-next {
-  // right: rem(-60);
-  // left: 95%;
-  right: 0;
-  // right: percent(-60, 1200);
+  right: rem(-10);
   transform: rotate(180deg);
+
+  @media (min-width: $laptop-lg) {
+    right: rem(-65);
+  }
 }
-
-
-// @media (max-width: $mobile) {
-//   .swiper-button-prev {
-//     left: percent(60, 1200);
-//   }
-
-//   .swiper-button-next {
-//     right: percent(60, 1200);
-//   }
-// }

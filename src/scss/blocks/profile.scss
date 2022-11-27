@@ -1,7 +1,4 @@
 .profile {
-  @include adaptiv-value(padding-top, 200, 150, 1);
-  margin-bottom: rem(120);
-
   &__container {}
 
   &__wrapper {
@@ -178,8 +175,8 @@
   &__btn {}
 }
 
-.profile-address {
-}
+.profile-address {}
+
 .address {
 
   &__title {
@@ -208,12 +205,6 @@
     &_form {
       margin-top: rem(30);
     }
-  }
-
-  &__edit {
-  }
-
-  &__delete {
   }
 
   &__form {

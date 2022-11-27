@@ -15,57 +15,34 @@
                 <div class="cart__breadcrumbs breadcrumbs">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="#">Cart</a>
+                            <a class="breadcrumbs__link" href="cart.html">Cart</a>
                         </li>
                         <li class="breadcrumbs__item active">
-                            <a class="breadcrumbs__link" href="#">Information</a>
+                            <a class="breadcrumbs__link" href="checkout-1.html">Information</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="#">Shipping</a>
+                            <a class="breadcrumbs__link" href="checkout-2.html">Shipping</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="#">Payment</a>
+                            <a class="breadcrumbs__link" href="checkout-3.html">Payment</a>
                         </li>
                     </ul>
                 </div>
-                <form class="checkout__wrapper" action="/">
+                <form id="checkoutForm" class="checkout__wrapper" action="checkout-2.html">
                     <div class="checkout__left">
-                        <div class="checkout__item">
+                        <div class="checkout__item active">
                             <div class="form__item">
                                 <div class="form__header">
                                     <h4 class="form__label">Contact information</h4>
                                     <div class="form__subtitle">Already have an account? <a class="form__link" href="log-in.html">Log In</a></div>
                                 </div>
                                 
-                                <div class="entered-info">
-                                    <div class="entered-info__item">
-                                        <div class="entered-info__left">
-                                            <span class="entered-info__title">Contact</span>
-                                            <span class="entered-info__data" id="enteredPhone">+7 894 445 65 45</span>
-                                        </div>
-                                        <button class="entered-info__btn checkout__return btn" type="button" id="enteredCharge">Charge</button>
-                                    </div>
-                                    <div class="entered-info__item">
-                                        <div class="entered-info__left">
-                                            <span class="entered-info__title">Ship to</span>
-                                            <div class="entered-info__data" id="enteredShipping">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
-                                        </div>
-                                        <button class="entered-info__btn checkout__return btn" type="button" id="enteredMethod">Charge</button>
-                                    </div>
-                                    <div class="entered-info__item">
-                                        <div class="entered-info__left">
-                                            <span class="entered-info__title">Method</span>
-                                            <span class="entered-info__data" id="enteredPayment">Standart - Free</span>
-                                        </div>
-                                        <button class="entered-info__btn checkout__return btn" type="button" id="enteredCharge">Charge</button>
-                                    </div>
-                                </div><!-- /.entered-info -->
-                                
                                 <div class="form__input__wrapper">
                                     <input
                                         class="form__input form__input_small"
                                         type="text"
                                         placeholder="Email or mobile phone number"
+                                        name="phone"
                                         required>
                                     <span>
                                         <svg>
@@ -93,7 +70,8 @@
                                     <input
                                         class="form__input form__input_small"
                                         type="text"
-                                        placeholder="Country/rerion"
+                                        placeholder="Country/region"
+                                        name="address1"
                                         required>
                                     <span>
                                         <svg>
@@ -107,6 +85,7 @@
                                             class="form__input form__input_small"
                                             type="text"
                                             placeholder="First name"
+                                            name="firstName"
                                             required>
                                         <span>
                                             <svg>
@@ -119,6 +98,7 @@
                                             class="form__input form__input_small"
                                             type="text"
                                             placeholder="Last name"
+                                            name="lastName"
                                             required>
                                         <span>
                                             <svg>
@@ -132,6 +112,7 @@
                                         class="form__input form__input_small"
                                         type="text"
                                         placeholder="Address"
+                                        name="address2"
                                         required>
                                     <span>
                                         <svg>
@@ -144,6 +125,7 @@
                                         class="form__input form__input_small"
                                         type="text"
                                         placeholder="Apartment, suite, etc. (optional)"
+                                        name="address3"
                                         required>
                                     <span>
                                         <svg>
@@ -157,6 +139,7 @@
                                             class="form__input form__input_small"
                                             type="text"
                                             placeholder="City"
+                                            name="address4"
                                             required>
                                         <span>
                                             <svg>
@@ -168,6 +151,7 @@
                                         <input
                                             class="form__input form__input_small"
                                             type="text"
+                                            name="address5"
                                             placeholder="Postcode"
                                             required>
                                         <span>
@@ -185,64 +169,6 @@
                                         id="checkoutAgreeInput">
                                     <span class="form__box"></span>
                                     Save this information for next time
-                                </label>
-                            </div>
-                        </div>
-                        <div class="checkout__item">
-                            <div class="form__item">
-                                <div class="form__header">
-                                    <h4 class="form__label">Payment method</h4>
-                                </div>
-                                <label class="form__label form__label_radio" for="checkoutPayment1">
-                                    <input
-                                        class="form__radio"
-                                        type="radio"
-                                        name="checkoutPaymentRadio"
-                                        id="checkoutPayment1"
-                                        checked
-                                        required>
-                                    <span class="form__box form__box_radio"></span>
-                                    <span class="form__radio__text">Standart</span>
-                                    <span class="form__radio__text form__radio__text_right">Free</span>
-                                </label>
-                                <label class="form__label form__label_radio" for="checkoutPayment2">
-                                    <input
-                                        class="form__radio"
-                                        type="radio"
-                                        name="checkoutPaymentRadio"
-                                        id="checkoutPayment2"
-                                        required>
-                                    <span class="form__box form__box_radio"></span>
-                                    <span class="form__radio__text">Standart</span>
-                                    <span class="form__radio__text form__radio__text_right">$7.00</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="checkout__item">
-                            <div class="form__item">
-                                <div class="form__header">
-                                    <h4 class="form__label">Shipping method</h4>
-                                </div>
-                                <label class="form__label form__label_radio" for="checkoutShipping1">
-                                    <input
-                                        class="form__radio"
-                                        type="radio"
-                                        name="checkoutShippingRadio"
-                                        id="checkoutShipping1"
-                                        checked
-                                        required>
-                                    <span class="form__box form__box_radio"></span>
-                                    <span class="form__radio__text">Same as shipping address</span>
-                                </label>
-                                <label class="form__label form__label_radio" for="checkoutShipping2">
-                                    <input
-                                        class="form__radio"
-                                        type="radio"
-                                        name="checkoutShippingRadio"
-                                        id="checkoutShipping2"
-                                        required>
-                                    <span class="form__box form__box_radio"></span>
-                                    <span class="form__radio__text">Use a different billing address</span>
                                 </label>
                             </div>
                         </div>

@@ -1,5 +1,7 @@
 .entered-info {
-  display: none;
+  display: block;
+  margin-bottom: rem(15);
+
   &__item {
     display: flex;
     align-items: center;
@@ -10,6 +12,10 @@
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid #BDBDBD;
     border-radius: rem(5);
+
+    &.show {
+      display: flex;
+    }
 
     &:not(:last-child) {
       margin-bottom: rem(15);
@@ -35,4 +41,3 @@
     color: var(--black);
   }
 }
-

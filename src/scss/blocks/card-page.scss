@@ -1,7 +1,4 @@
 .card-page {
-  @include adaptiv-value(padding-top, 250, 110, 0);
-  margin-bottom: rem(120);
-
   &__container {}
 
   &__wrapper {
@@ -17,6 +14,7 @@
   }
 
   &__preview {
+    position: relative;
     @media (min-width: $mobile) {
       display: flex;
       flex-direction: column;

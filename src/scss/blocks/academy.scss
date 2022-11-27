@@ -1,6 +1,4 @@
-.academy {
-  @include adaptiv-value(padding-top, 180, 90, 0);
-}
+.academy {}
 
 .academy-intro {
   margin-top: rem(30);
@@ -77,8 +75,6 @@
       position: relative;
       margin: 0 auto;
       max-height: rem(500);
-
-      // bottom: rem(50);
     }
   }
 

@@ -2,6 +2,16 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin-bottom: rem(120);
+
+  &:not(.page_intro) {
+    @include adaptiv-value(padding-top, 200, 110, 1);
+  }
+
+
+  @media (max-width: $mobile) {
+    margin-bottom: rem(80);
+  }
 
   &__header {
     text-align: center;
@@ -18,11 +28,4 @@
       font-size: rem(28);
     }
   }
-
-
-}
-
-.page-form {
-  @include adaptiv-value(padding-top, 200, 110, 1);
-  margin-bottom: rem(120);
 }

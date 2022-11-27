@@ -1,12 +1,4 @@
 .checkout {
-  @include adaptiv-value(padding-top, 200, 110, 1);
-
-  margin-bottom: rem(120);
-
-  @media (max-width: $mobile) {
-    margin-bottom: rem(80);
-  }
-
   &__wrapper {
     display: flex;
     @include adaptiv-value(column-gap, 70, 20, 0);
@@ -29,6 +21,10 @@
 
   &__item {
     margin-bottom: rem(80);
+
+    &.active {
+      display: block;
+    }
 
     @media (max-width: $tablet) {
       & .form__header {

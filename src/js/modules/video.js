@@ -7,7 +7,7 @@ const video = () => {
   };
 
   const videoElems = {
-    btns: document.querySelectorAll('[data-play]'),
+    buttons: document.querySelectorAll('[data-play]'),
     video: document.querySelectorAll('[data-video]'),
   };
 
@@ -15,7 +15,7 @@ const video = () => {
     btn.addEventListener('click', () => {
       btn.classList.toggle('active');
       cardElems.videoWrapper.classList.toggle('show');
-      cardElems.wrapper.classList.toggle('hidden');
+      cardElems.itemWrapper.classList.toggle('hidden');
     });
   }
 
@@ -39,7 +39,7 @@ const video = () => {
   };
 
   const player = () => {
-    for (const btn of videoElems.btns) {
+    for (const btn of videoElems.buttons) {
       const elem = btn.closest('.blog__preview');
       const videoItem = elem.querySelector('.blog__video');
       btn.addEventListener('click', () => {

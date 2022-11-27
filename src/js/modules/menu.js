@@ -1,8 +1,4 @@
 const changeMenu = () => {
-  // const replaceClass = (wrapper, menuWrapper) => {
-  //   wrapper.classList.toggle('hidden');
-  //   // menuWrapper.classList.toggle('show');
-  // };
   const openBtns = document.querySelectorAll('[data-menu');
   const minWidth = 768;
   for (const btn of openBtns) {
@@ -16,7 +12,6 @@ const changeMenu = () => {
           event.preventDefault();
           item.classList.toggle('show');
         }
-        console.log(menuWrapper);
         wrapper.classList.toggle('hidden');
         menuWrapper.classList.toggle('show');
       });

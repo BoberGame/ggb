@@ -1,7 +1,4 @@
 .tabs-products {
-  @include adaptiv-value(padding-top, 200, 110, 0);
-  margin-bottom: rem(120);
-
   &__container {}
 
   &__nav {
@@ -9,7 +6,6 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    // gap: rem(20);
     @include adaptiv-value(gap, 20, 10, 0);
     margin: rem(60) 0;
   }
@@ -79,27 +75,4 @@
       font-size: rem(18);
     }
   }
-
-  // &__prices {
-  //   display: flex;
-  //   align-items: center;
-  //   column-gap: rem(10);
-  // }
-
-  // &__cost {
-  //   font-size: rem(20);
-  //   color: var(--black);
-  //   font-weight: 600;
-  //   line-height: 1.45;
-
-  //   &_old {
-  //     text-decoration: line-through;
-  //     color: var(--grey);
-  //     font-weight: 400;
-  //   }
-
-  //   @media (max-width: $mobile) {
-  //     font-size: rem(18);
-  //   }
-  // }
 }

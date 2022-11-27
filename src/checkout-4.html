@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('partials/head.html', {
+"title":"Cart"
+})
+
+<body>
+    @@include('partials/header.html', {})
+    <main class="page">
+        <section class="checkout">
+            <div class="checkout__container">
+                <div class="page__header">
+                    <h1 class="page__title">Checkout</h1>
+                </div>
+                <div class="cart__breadcrumbs breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="cart.html">Cart</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="checkout-1.html">Information</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="checkout-2.html">Shipping</a>
+                        </li>
+                        <li class="breadcrumbs__item active">
+                            <a class="breadcrumbs__link" href="checkout-3.html">Payment</a>
+                        </li>
+                    </ul>
+                </div>
+                <form id="checkoutForm" class="checkout__wrapper" action="/">
+                    <div class="checkout__left">
+                        <div class="checkout__item active">
+                            <div class="form__item">
+                                <div class="form__header">
+                                    <h4 class="form__label">Contact information</h4>
+                                    <div class="form__subtitle">Already have an account? <a class="form__link" href="log-in.html">Log In</a></div>
+                                </div>
+                                
+                                <div class="entered-info">
+                                    <div class="entered-info__item">
+                                        <div class="entered-info__left">
+                                            <span class="entered-info__title">Contact</span>
+                                            <span class="entered-info__data" id="orderPhone"></span>
+                                        </div>
+                                        <button class="entered-info__btn checkout__return btn" type="button" data-back>Charge</button>
+                                    </div>
+                                    <div class="entered-info__item">
+                                        <div class="entered-info__left">
+                                            <span class="entered-info__title">Ship to</span>
+                                            <div class="entered-info__data" id="orderShipping"></div>
+                                        </div>
+                                        <button class="entered-info__btn checkout__return btn" type="button" data-back>Charge</button>
+                                    </div>
+                                    <div class="entered-info__item">
+                                        <div class="entered-info__left">
+                                            <span class="entered-info__title">Method</span>
+                                            <span class="entered-info__data" id="orderPayment"></span>
+                                        </div>
+                                        <button class="entered-info__btn checkout__return btn" type="button" data-back>Charge</button>
+                                    </div>
+                                </div><!-- /.entered-info -->
+                            </div>
+                        </div>
+                        <div class="checkout__footer">
+                            <button class="checkout__btn btn btn_dark" type="submit">Complete order</button>
+                            <a class="checkout__return btn" href="cart.html">Return to basket</a>
+                        </div>
+                    </div>
+                    <div class="checkout__right">
+                        <div class="checkout__items">
+                            <div class="cart__item cart__item_checkout">
+                                <img class="cart__preview cart__preview_checkout" src="@img/goods/pmu.png" alt="">
+                                <div class="cart__info">
+                                    <h4 class="cart__name cart__name_checkout">Microfine Pen</h4>
+                                    <div class="cart__price cart__price_total">$375.00</div>
+                                </div>
+                                <span class="cart__number">1</span>
+                            </div>
+                            <div class="cart__item cart__item_checkout">
+                                <img class="cart__preview cart__preview_checkout" src="@img/goods/pen.png" alt="">
+                                <div class="cart__info">
+                                    <h4 class="cart__name cart__name_checkout">Microfine Pen</h4>
+                                    <div class="cart__price cart__price_total">$375.00</div>
+                                </div>
+                                <span class="cart__number">2</span>
+                            </div>
+                            <div class="cart__item cart__item_checkout">
+                                <img class="cart__preview cart__preview_checkout" src="@img/goods/sketch.png" alt="">
+                                <div class="cart__info">
+                                    <h4 class="cart__name cart__name_checkout">Microfine Scketch</h4>
+                                    <div class="cart__price cart__price_total">$375.00</div>
+                                </div>
+                                <span class="cart__number">3</span>
+                            </div>
+                        </div>
+                        <div class="checkout__discount">
+                            <div class="form__several">
+                                <div class="form__input__wrapper">
+                                    <input
+                                        class="form__input form__input_small"
+                                        type="text"
+                                        placeholder="Discount code">
+                                    <span>
+                                        <svg>
+                                            <use href="@img/icons/icons.svg#exclamation"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <button class="checkout__discount__btn btn btn_sm btn_grey">Apply</button>
+                            </div>
+                        </div>
+                        <div class="checkout-prices">
+                            <div class="checkout__subtotal">
+                                <div class="checkout-prices__item">
+                                    <span class="checkout-prices__title">Subtotal</span>
+                                    <span class="checkout-prices__price">$1 314.00</span>
+                                </div>
+                                <div class="checkout-prices__item">
+                                    <span class="checkout-prices__title">Shipping</span>
+                                    <span class="checkout-prices__title">Calculated at next step</span>
+                                </div>
+                            </div>
+                            <div class="checkout__total">
+                                <div class="checkout-prices__item">
+                                    <span class="checkout-prices__title checkout-prices__title_total">Total</span>
+                                    <span class="checkout-prices__price checkout-prices__price_total">$132.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div><!-- /.checkout__container -->
+        </section><!-- /.checkout -->
+    </main>
+    @@include('partials/footer.html', {})
+    <!-- @@include('partials/cart-popup.html', {}) -->
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,11 +1,4 @@
 .tabs-page {
-  @include adaptiv-value(padding-top, 250, 110, 1);
-  margin-bottom: rem(120);
-
-  @media (max-width: $mobile) {
-    margin-bottom: rem(80);
-  }
-
   &__header {
     margin-left: 22%;
 

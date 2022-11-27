@@ -1,11 +1,4 @@
 .search {
-  @include adaptiv-value(padding-top, 200, 150, 1);
-  margin-bottom: rem(120);
-
-  @media (max-width: $mobile) {
-    margin-bottom: rem(80);
-  }
-
   &__title {
     margin-top: rem(40);
 

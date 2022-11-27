@@ -43,15 +43,6 @@
   &_light {
     --btn-bg: var(--white);
     --btn-color: var(--black);
-
-    @media (any-hover: hover) {
-      &:not(&.btn_outline) {
-        // &:hover {
-        //   --btn-bg: var(--black);
-        //   --btn-color: var(--white);
-        // }
-      }
-    }
   }
 
   &_grey {
@@ -79,7 +70,6 @@
     }
 
     @media (any-hover: hover) {
-
       &:not(&.btn_outline,
         &:disabled) {
         &:hover {
@@ -113,6 +103,4 @@
   &_100 {
     width: 100%;
   }
-
-  
 }

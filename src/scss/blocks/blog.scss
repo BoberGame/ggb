@@ -1,6 +1,4 @@
 .blog {
-  @include adaptiv-value(padding-top, 250, 110, 0);
-  margin-bottom: rem(120);
 
   @media (max-width: $mobile) {
     margin-bottom: rem(80);
@@ -31,8 +29,6 @@
     margin-bottom: rem(20);
     overflow: hidden;
     border-radius: rem(5);
-
-    @media (max-width: $mobile) {}
   }
 
   &__video {}

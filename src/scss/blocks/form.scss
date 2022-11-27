@@ -68,7 +68,6 @@
 
   &__label {
     display: block;
-    // margin-bottom: rem(10);
 
     font-size: rem(20);
     font-weight: 600;
@@ -108,7 +107,6 @@
 
       &:not(:last-child) {
         margin-bottom: rem(15);
-
       }
     }
   }
@@ -171,7 +169,6 @@
 
     &_radio {
       border-radius: 50%;
-      // position: relative;
 
       &:before {
         content: '';

@@ -121,15 +121,8 @@
   }
 
   &__caption {
-    // left: rem(-80);
     left: -5%;
-    // left: 0;
-    // bottom: rem(-45);
     bottom: -7%;
-
-    @media (max-width: $tablet) {
-      // left: 0;
-    }
 
     @media (max-width: $mobile-sm) {
       left: -10%;
@@ -145,7 +138,6 @@
     b {
       font-weight: 400;
       padding-left: rem(90);
-      // padding-left: 10%;
     }
   }
 }
